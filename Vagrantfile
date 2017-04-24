@@ -16,11 +16,9 @@ Vagrant.configure("2") do |config|
       v.cpus = 1
     end
 
+    config.vm.provision "shell", path: "xdebug.sh"
+
     config.vm.provision "shell", inline: <<-SHELL
-      apt-get update
-      apt-get install -y php5-xdebug
-      cat /var/www/config/php.ini >> /etc/php5/apache2/php.ini
-      service apache2 restart
       sed -i 's/bind-address/#bind-address/g' /etc/mysql/my.cnf
       mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root';"      
       service mysql restart
