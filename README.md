@@ -6,7 +6,7 @@ Esta es una versión personalizada de la máquina original que se puede encontra
 
 * Descargar e instalar [Vagrant][3].
 * Descargar e instalar [VirtualBox][4] y sus extensiones cuando lo pida.
-* Clonar [este repositorio](https://github.com/Egibide-LM2015/scotch-box) en una carpeta del ordenador.
+* Clonar este repositorio en una carpeta del ordenador.
 * Ejecutar el comando ``` vagrant up ``` en esa carpeta.
 * Acceder al proyecto a través de la dirección [http://192.168.33.10/][14]
 
