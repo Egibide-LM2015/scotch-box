@@ -67,20 +67,6 @@ En Windows hay que tener un cliente SSH para que este comando funcione. Se puede
 - Username: vagrant
 - Password: vagrant
 
-## Habilitar la depuración con PhpStorm
-
-### Crear una nueva configuración
-![](config/phpstorm01.png)
-
-### Generar una aplicación web PHP
-![](config/phpstorm02.png)
-
-### Configuración de la aplicación
-![](config/phpstorm03.png)
-
-### Configuración del servidor
-![](config/phpstorm04.png)
-
 ## The MIT License (MIT)
 
 Copyright (c) 2014-2015 Nicholas Cerminara, scotch.io, LLC
