@@ -1,72 +1,112 @@
+# Egibide - Scotch Box
 
-# Scotch Box
+Esta es una versión personalizada de la máquina original que se puede encontrar en [box.scotch.io][16].
 
-## [GET SCOTCH BOX PRO](https://box.scotch.io/pro)
+## Inicio rápido
 
-## [TUTORIAL](https://scotch.io/bar-talk/announcing-scotch-box-30-and-scotch-box-pro)
+* Descargar e instalar [Vagrant][3].
+* Descargar e instalar [VirtualBox][4] y sus extensiones cuando lo pida.
+* Clonar [este repositorio](https://github.com/Egibide-LM2015/scotch-box) en una carpeta del ordenador.
+* Ejecutar el comando ``` vagrant up ``` en esa carpeta.
+* Acceder al proyecto a través de la dirección [http://192.168.33.10/][14]
 
-Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS EATING CAKE for developers.**
+## Comandos básicos de Vagrant
 
-![Scotch Box](https://box.scotch.io/img/pro-banner.png)
+### Arrancar el servidor
+```bash
+vagrant up
+```
 
-Scotch Box is a pre-configured Vagrant Box with a full array of features to get you up and running with Vagrant in no time.
+### Pausar el servidor
+```bash
+vagrant suspend
+```
+
+### Apagar el servidor
+```bash
+vagrant halt
+```
+
+### Borrar el servidor ⚠️
+```bash
+vagrant destroy
+```
+
+### Acceder por SSH al servidor
+```bash
+vagrant ssh
+```
+En Windows hay que tener un cliente SSH para que este comando funcione. Se puede instalar el cliente de [Git](https://git-scm.com/downloads) y utilizar el shell que proporciona, que incluye SSH.
+
+## Usuarios y contraseñas
+
+### MySQL 
+
+- Hostname: localhost or 127.0.0.1
+- Username: root
+- Password: root
+- Database: scotchbox
+
+### PostgreSQL
+
+- Hostname: localhost or 127.0.0.1
+- Username: root
+- Password: root
+- Database: scotchbox
+- Port: 5432
+
+### MongoDB
+
+- Hostname: localhost
+- Database: scotchbox
+- Port: 27017
+
+### SSH Access
+
+- Hostname: 127.0.0.1:2222
+- Username: vagrant
+- Password: vagrant
+
+## Habilitar la depuración con PhpStorm
+
+### Crear una nueva configuración
+![](config/phpstorm01.png)
+
+### Generar una aplicación web PHP
+![](config/phpstorm02.png)
+
+### Configuración de la aplicación
+![](config/phpstorm03.png)
+
+### Configuración del servidor
+![](config/phpstorm04.png)
+
+## The MIT License (MIT)
+
+Copyright (c) 2014-2015 Nicholas Cerminara, scotch.io, LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-## Scotch Box 3.0!
 
-3.0 is finally here here!
-
-* Fixed a bunch of issues via Github
-* Upgraded to PHP 7!
-* New website and Docs
-* "Scotch Box Pro" version released with even more features
-* New and improved starter file index.php
-
-
-## License Required?!!!!?!
-
-Still MIT License for the free version. Free version is still beast.
-
-Pro will help support the project, let you customize somet things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, hurting for cash, email me at nick@scotch.io so I can get you setup with Pro no charge.
-
-"Scotch Box Pro" is a paid version of the original Scotch Box. [Go Pro Now!](https://box.scotch.io/pro)
-
-
-## Pro Features
-
-* Ubuntu 16.04!
-* PHP 7!
-* MySQL 5.7!
-* NGINX Option!
-* Go lang in the box
-* PHPUnit in the box
-* Yarn
-* Improved email catching with MailHog
-* Vagrant Share working nicely finally
-* The box's build scripts
-* Customize your own boxes in minutes
-* Generally higher versions of things (Node.js, Ruby, etc.)!
-
-![Scotch Box](https://box.scotch.io/img/terminal.png)
-
-## Documentation
-
-* Check out the official docs at: [box.scotch.io](https://box.scotch.io)
-* [Read the getting started article](https://scotch.io/bar-talk/introducing-scotch-box-a-vagrant-lamp-stack-that-just-works)
-* [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
-* [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
-
-
-
-## More Information
-
-Check-out [box.scotch.io](https://box.scotch.io) to learn more.
-
-
-
-
-## Special Thank You
-
-I was dark on this project for a little bit too long. Got caught up with work and a million other things. I apologize for slowness to release updates. I'm hoping the Pro version can create a bit more motivation to dedicate time to this. I also finally have the build scripts available for download with the Pro version so people can start addressing bugs themselves with your own personal boxes.
-
-Thanks to the community for bug fixes and provisioning tips. Special shout-out to [@maxpou](https://github.com/maxpou) for completely killing it with community responses 
+ [1]: https://github.com/MiniCodeMonkey/Vagrant-LAMP-Stack
+ [2]: http://scotch.io/tutorials/get-vagrant-up-and-running-in-no-time
+ [3]: https://www.vagrantup.com/downloads.html
+ [4]: https://www.virtualbox.org/wiki/Downloads
+ [5]: http://www.sequelpro.com/
+ [6]: http://www.navicat.com/
+ [7]: http://github.com/scotch-io
+ [8]: http://twitter.com/scotch_io
+ [9]: https://github.com/smdahlen/vagrant-hostmanager
+ [10]: http://scotch.io/tutorials/sharing-your-virtual-machine-on-the-web-with-vagrant-share
+ [11]: http://scotch.io/tutorials/php/getting-started-with-laravel-homestead
+ [12]: https://www.vagrantup.com/downloads.html
+ [13]: https://www.virtualbox.org/wiki/Downloads
+ [14]: http://192.168.33.10/
+ [15]: https://github.com/smdahlen/vagrant-hostmanager
+ [16]: http://box.scotch.io
+ [17]: http://scotch.io/bar-talk/introducing-scotch-box-a-vagrant-lamp-stack-that-just-works
