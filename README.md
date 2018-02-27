@@ -47,18 +47,6 @@ En Windows hay que tener un cliente SSH para que este comando funcione. Se puede
 - Password: root
 - Database: scotchbox
 
-### PostgreSQL
-- Hostname: localhost or 127.0.0.1
-- Username: root
-- Password: root
-- Database: scotchbox
-- Port: 5432
-### MongoDB
-
-- Hostname: localhost
-- Database: scotchbox
-- Port: 27017
-
 ### SSH Access
 
 - Hostname: 127.0.0.1:2222
