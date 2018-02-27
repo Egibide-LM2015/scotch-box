@@ -10,6 +10,10 @@ Esta es una versión personalizada de la máquina original que se puede encontra
 * Ejecutar el comando ``` vagrant up ``` en esa carpeta.
 * Acceder al proyecto a través de la dirección [http://192.168.33.10/][14]
 
+## Depuración con PhpStorm y Xdebug
+
+Las instrucciones la configuración están [aquí](PhpStorm+Xdebug.md).
+
 ## Comandos básicos de Vagrant
 
 ### Arrancar el servidor
