@@ -51,12 +51,6 @@ En Windows hay que tener un cliente SSH para que este comando funcione. Se puede
 - Password: root
 - Database: scotchbox
 
-### SSH Access
-
-- Hostname: 127.0.0.1:2222
-- Username: vagrant
-- Password: vagrant
-
 ## The MIT License (MIT)
 
 Copyright (c) 2014-2015 Nicholas Cerminara, scotch.io, LLC
