@@ -2,6 +2,16 @@
 
 Esta es una versión personalizada de la máquina original que se puede encontrar en [box.scotch.io][16].
 
+## Tabla de contenidos
+
+* [Inicio rápido](#inicio-rápido)
+* [Depuración con PhpStorm y Xdebug](#depuración-con-phpstorm-y-xdebug)
+* [Comandos básicos de Vagrant](#comandos-básicos-de-vagrant)
+* [Usuarios y contraseñas](#usuarios-y-contraseñas)
+* [The MIT License (MIT)](#the-mit-license-mit)
+
+Creada con [gh-md-toc](https://github.com/ekalinin/github-markdown-toc).
+
 ## Inicio rápido
 
 * Descargar e instalar [Vagrant][3].
