@@ -22,7 +22,7 @@ Creada con [gh-md-toc](https://github.com/ekalinin/github-markdown-toc).
 
 ## Depuración con PhpStorm y Xdebug
 
-Las instrucciones la configuración están [aquí](PhpStorm+Xdebug.md).
+Las instrucciones la configuración están [aquí](./debug/PhpStorm+Xdebug.md).
 
 ## Comandos básicos de Vagrant
 

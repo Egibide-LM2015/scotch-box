@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
       v.cpus = 1
     end
 
-    config.vm.provision "shell", path: "config/xdebug.sh"
+    config.vm.provision "shell", path: "config/apache.sh"
 
     config.vm.provision "shell", inline: <<-SHELL
       sed -i 's/bind-address/#bind-address/g' /etc/mysql/my.cnf
