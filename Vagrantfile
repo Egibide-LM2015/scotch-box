@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", path: "config/apache.sh"
 
     config.vm.provision "shell", inline: <<-SHELL
-      sed -i 's/bind-address/#bind-address/g' /etc/mysql/my.cnf
+      sed -i 's/bind-address/#bind-address/g' /etc/mysql/mysql.conf.d/mysqld.cnf
       mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root';"      
       service mysql restart
     SHELL
