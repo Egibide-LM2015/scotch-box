@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
 yes | sudo apt-get update
 yes | sudo apt-get install php-xdebug
 
