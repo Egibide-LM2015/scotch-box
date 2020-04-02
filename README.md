@@ -1,3 +1,6 @@
+
+> :warning: Este repositorio está obsoleto, es mejor usar [dockerbox](https://github.com/egibide/dockerbox).
+
 # Egibide - Scotch Box
 
 Esta es una versión personalizada de la máquina original que se puede encontrar en [box.scotch.io][16].
